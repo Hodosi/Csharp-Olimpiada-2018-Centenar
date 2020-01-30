@@ -1,0 +1,9 @@
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\bin\Debug\CentenarMareaUnire.exe
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\bin\Debug\CentenarMareaUnire.pdb
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.csprojAssemblyReference.cache
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.Centenar_Start.resources
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.Properties.Resources.resources
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.csproj.GenerateResource.cache
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.exe
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.pdb
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.Vizualizare_Lectii.resources
