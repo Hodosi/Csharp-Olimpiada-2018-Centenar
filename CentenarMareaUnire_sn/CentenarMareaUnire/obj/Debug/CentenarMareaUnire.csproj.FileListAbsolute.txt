@@ -7,3 +7,5 @@ D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMarea
 D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.exe
 D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.pdb
 D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.Vizualizare_Lectii.resources
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.Logare.resources
+D:\Desktop\2018\CentenarMareaUnire_sn\CentenarMareaUnire\obj\Debug\CentenarMareaUnire.Am_Uitat_Parola.resources

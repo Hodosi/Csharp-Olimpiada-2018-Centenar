@@ -32,8 +32,8 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox_Info = new System.Windows.Forms.TextBox();
             this.button_Inapoi = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,15 +79,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Lectii";
             // 
-            // textBox_Info
-            // 
-            this.textBox_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Info.Location = new System.Drawing.Point(179, 466);
-            this.textBox_Info.Multiline = true;
-            this.textBox_Info.Name = "textBox_Info";
-            this.textBox_Info.Size = new System.Drawing.Size(742, 121);
-            this.textBox_Info.TabIndex = 4;
-            // 
             // button_Inapoi
             // 
             this.button_Inapoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,19 +88,30 @@
             this.button_Inapoi.TabIndex = 5;
             this.button_Inapoi.Text = "Inapoi";
             this.button_Inapoi.UseVisualStyleBackColor = true;
+            this.button_Inapoi.Click += new System.EventHandler(this.button_Inapoi_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(179, 466);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(742, 121);
+            this.richTextBox1.TabIndex = 7;
+            this.richTextBox1.Text = "";
             // 
             // Vizualizare_Lectii
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 628);
+            this.ClientSize = new System.Drawing.Size(933, 603);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button_Inapoi);
-            this.Controls.Add(this.textBox_Info);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
             this.Name = "Vizualizare_Lectii";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vizualizare_Lectii";
             this.Load += new System.EventHandler(this.Vizualizare_Lectii_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -124,7 +126,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox_Info;
         private System.Windows.Forms.Button button_Inapoi;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

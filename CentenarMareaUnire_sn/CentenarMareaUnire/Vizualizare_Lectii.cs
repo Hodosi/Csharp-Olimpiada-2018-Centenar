@@ -41,17 +41,20 @@ namespace CentenarMareaUnire
             this.pictureBox1.Image = Image.FromFile(fn);
 
             DataTable table = lectii.getUserData(nmImg);
-
-            string info="";
-            for(int i = 0; i < 4; i++)
+            // this.dataGridView1.DataSource = table;
+            string info = "";
+            for (int i = 0; i < 4; i++)
             {
-                //info = info
+                info = info + table.Rows[0][i] + "\n";
             }
+            this.richTextBox1.Text = info;
         }
 
-        public void upUserData()
+        private void button_Inapoi_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Centenar_Start f = new Centenar_Start();
+            f.ShowDialog();
         }
     }
 }

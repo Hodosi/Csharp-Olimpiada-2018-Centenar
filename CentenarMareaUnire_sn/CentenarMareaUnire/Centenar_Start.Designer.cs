@@ -72,6 +72,7 @@
             this.toolStripButton_Logare_Utilizator.Name = "toolStripButton_Logare_Utilizator";
             this.toolStripButton_Logare_Utilizator.Size = new System.Drawing.Size(162, 32);
             this.toolStripButton_Logare_Utilizator.Text = "Logare Utilizator";
+            this.toolStripButton_Logare_Utilizator.Click += new System.EventHandler(this.toolStripButton_Logare_Utilizator_Click);
             // 
             // toolStripButton_Creare_Lectie
             // 
@@ -110,6 +111,7 @@
             this.ClientSize = new System.Drawing.Size(1016, 450);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Centenar_Start";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Centenar_Start";
             this.Load += new System.EventHandler(this.Centenar_Start_Load);
             this.toolStrip1.ResumeLayout(false);
@@ -120,12 +122,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton_Vizualizare_lectii;
         private System.Windows.Forms.ToolStripButton toolStripButton_Logare_Utilizator;
-        private System.Windows.Forms.ToolStripButton toolStripButton_Creare_Lectie;
-        private System.Windows.Forms.ToolStripButton toolStripButton_Ghiceste_Regiunea;
-        private System.Windows.Forms.ToolStripButton toolStripButton_Generare_Traseu;
+        public System.Windows.Forms.ToolStrip toolStrip1;
+        public System.Windows.Forms.ToolStripButton toolStripButton_Creare_Lectie;
+        public System.Windows.Forms.ToolStripButton toolStripButton_Ghiceste_Regiunea;
+        public System.Windows.Forms.ToolStripButton toolStripButton_Generare_Traseu;
     }
 }

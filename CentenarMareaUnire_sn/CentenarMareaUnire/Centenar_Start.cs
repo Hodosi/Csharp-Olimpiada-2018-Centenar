@@ -109,9 +109,16 @@ namespace CentenarMareaUnire
 
         private void toolStripButton_Vizualizare_lectii_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Vizualizare_Lectii f = new Vizualizare_Lectii();
             f.ShowDialog();
-            this.Close();
+        }
+
+        private void toolStripButton_Logare_Utilizator_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Logare f = new Logare();
+            f.ShowDialog();
         }
     }
 }
