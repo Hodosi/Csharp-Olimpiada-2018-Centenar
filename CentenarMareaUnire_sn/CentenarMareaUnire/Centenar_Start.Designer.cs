@@ -77,22 +77,22 @@
             // toolStripButton_Creare_Lectie
             // 
             this.toolStripButton_Creare_Lectie.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton_Creare_Lectie.Enabled = false;
             this.toolStripButton_Creare_Lectie.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Creare_Lectie.Image")));
             this.toolStripButton_Creare_Lectie.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_Creare_Lectie.Name = "toolStripButton_Creare_Lectie";
             this.toolStripButton_Creare_Lectie.Size = new System.Drawing.Size(127, 32);
             this.toolStripButton_Creare_Lectie.Text = "Creare Lectie";
+            this.toolStripButton_Creare_Lectie.Click += new System.EventHandler(this.toolStripButton_Creare_Lectie_Click);
             // 
             // toolStripButton_Ghiceste_Regiunea
             // 
             this.toolStripButton_Ghiceste_Regiunea.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton_Ghiceste_Regiunea.Enabled = false;
             this.toolStripButton_Ghiceste_Regiunea.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Ghiceste_Regiunea.Image")));
             this.toolStripButton_Ghiceste_Regiunea.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_Ghiceste_Regiunea.Name = "toolStripButton_Ghiceste_Regiunea";
             this.toolStripButton_Ghiceste_Regiunea.Size = new System.Drawing.Size(175, 32);
             this.toolStripButton_Ghiceste_Regiunea.Text = "Ghiceste Regiunea";
+            this.toolStripButton_Ghiceste_Regiunea.Click += new System.EventHandler(this.toolStripButton_Ghiceste_Regiunea_Click);
             // 
             // toolStripButton_Generare_Traseu
             // 

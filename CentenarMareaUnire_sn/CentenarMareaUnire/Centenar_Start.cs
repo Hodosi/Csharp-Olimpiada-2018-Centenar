@@ -120,5 +120,19 @@ namespace CentenarMareaUnire
             Logare f = new Logare();
             f.ShowDialog();
         }
+
+        private void toolStripButton_Creare_Lectie_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Creare_Lectii f = new Creare_Lectii();
+            f.ShowDialog();
+        }
+
+        private void toolStripButton_Ghiceste_Regiunea_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ghiceste_Regiunea f = new Ghiceste_Regiunea();
+            f.ShowDialog();
+        }
     }
 }
