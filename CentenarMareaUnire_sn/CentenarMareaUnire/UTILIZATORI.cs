@@ -35,6 +35,24 @@ namespace CentenarMareaUnire
             }
         }
 
+        public string getUser(string email, string pass)
+        {
+            SqlCommand command = new SqlCommand();
+            command.CommandText = "Select Nume From Utilizatori WHERE Email=@em and Parola=@pass";
+            command.Connection = conn.getConnection();
+
+            command.Parameters.Add("em", SqlDbType.VarChar).Value = email;
+            command.Parameters.Add("pass", SqlDbType.VarChar).Value = pass;
+            DataTable table = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            return table.Rows[0][0].ToString();
+
+        }
+
         public bool existsEmail(string email)
         {
             SqlCommand command = new SqlCommand();
@@ -80,5 +98,9 @@ namespace CentenarMareaUnire
                 return false;
             }
         }
+
+
+
+
     }
 }

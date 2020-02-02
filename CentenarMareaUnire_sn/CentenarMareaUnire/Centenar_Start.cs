@@ -134,5 +134,11 @@ namespace CentenarMareaUnire
             Ghiceste_Regiunea f = new Ghiceste_Regiunea();
             f.ShowDialog();
         }
+
+        private void toolStripButton_Generare_Traseu_Click(object sender, EventArgs e)
+        {
+            Generare_Traseu f = new Generare_Traseu();
+            f.ShowDialog();
+        }
     }
 }

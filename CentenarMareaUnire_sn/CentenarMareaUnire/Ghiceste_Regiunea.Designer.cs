@@ -40,9 +40,10 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.button_Start = new System.Windows.Forms.Button();
+            this.button_Verifica = new System.Windows.Forms.Button();
             this.textBox_puncte = new System.Windows.Forms.TextBox();
             this.label_Puncte = new System.Windows.Forms.Label();
-            this.button_Verifica = new System.Windows.Forms.Button();
+            this.button_Diploma = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -155,6 +156,17 @@
             this.button_Start.UseVisualStyleBackColor = true;
             this.button_Start.Click += new System.EventHandler(this.button_Start_Click);
             // 
+            // button_Verifica
+            // 
+            this.button_Verifica.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Verifica.Location = new System.Drawing.Point(879, 289);
+            this.button_Verifica.Name = "button_Verifica";
+            this.button_Verifica.Size = new System.Drawing.Size(138, 39);
+            this.button_Verifica.TabIndex = 13;
+            this.button_Verifica.Text = "Verifica";
+            this.button_Verifica.UseVisualStyleBackColor = true;
+            this.button_Verifica.Click += new System.EventHandler(this.button_Verifica_Click);
+            // 
             // textBox_puncte
             // 
             this.textBox_puncte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,22 +185,23 @@
             this.label_Puncte.TabIndex = 12;
             this.label_Puncte.Text = "Puncte";
             // 
-            // button_Verifica
+            // button_Diploma
             // 
-            this.button_Verifica.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Verifica.Location = new System.Drawing.Point(879, 289);
-            this.button_Verifica.Name = "button_Verifica";
-            this.button_Verifica.Size = new System.Drawing.Size(138, 39);
-            this.button_Verifica.TabIndex = 13;
-            this.button_Verifica.Text = "Verifica";
-            this.button_Verifica.UseVisualStyleBackColor = true;
-            this.button_Verifica.Click += new System.EventHandler(this.button_Verifica_Click);
+            this.button_Diploma.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Diploma.Location = new System.Drawing.Point(879, 391);
+            this.button_Diploma.Name = "button_Diploma";
+            this.button_Diploma.Size = new System.Drawing.Size(138, 39);
+            this.button_Diploma.TabIndex = 14;
+            this.button_Diploma.Text = "Diploma";
+            this.button_Diploma.UseVisualStyleBackColor = true;
+            this.button_Diploma.Click += new System.EventHandler(this.button_Diploma_Click);
             // 
             // Ghiceste_Regiunea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 549);
+            this.Controls.Add(this.button_Diploma);
             this.Controls.Add(this.button_Verifica);
             this.Controls.Add(this.label_Puncte);
             this.Controls.Add(this.textBox_puncte);
@@ -226,8 +239,9 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Button button_Start;
+        private System.Windows.Forms.Button button_Verifica;
         private System.Windows.Forms.TextBox textBox_puncte;
         private System.Windows.Forms.Label label_Puncte;
-        private System.Windows.Forms.Button button_Verifica;
+        private System.Windows.Forms.Button button_Diploma;
     }
 }

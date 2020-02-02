@@ -63,12 +63,25 @@
     <Compile Include="Creare_Lectii.Designer.cs">
       <DependentUpon>Creare_Lectii.cs</DependentUpon>
     </Compile>
+    <Compile Include="Diploma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diploma.Designer.cs">
+      <DependentUpon>Diploma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generare Traseu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generare Traseu.Designer.cs">
+      <DependentUpon>Generare Traseu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ghiceste_Regiunea.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ghiceste_Regiunea.Designer.cs">
       <DependentUpon>Ghiceste_Regiunea.cs</DependentUpon>
     </Compile>
+    <Compile Include="GLOBAL.cs" />
     <Compile Include="LECTII.cs" />
     <Compile Include="Logare.cs">
       <SubType>Form</SubType>
@@ -93,6 +106,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Creare_Lectii.resx">
       <DependentUpon>Creare_Lectii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diploma.resx">
+      <DependentUpon>Diploma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generare Traseu.resx">
+      <DependentUpon>Generare Traseu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ghiceste_Regiunea.resx">
       <DependentUpon>Ghiceste_Regiunea.cs</DependentUpon>

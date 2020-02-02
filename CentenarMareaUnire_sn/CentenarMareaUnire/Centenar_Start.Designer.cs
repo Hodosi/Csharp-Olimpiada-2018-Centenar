@@ -97,12 +97,12 @@
             // toolStripButton_Generare_Traseu
             // 
             this.toolStripButton_Generare_Traseu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton_Generare_Traseu.Enabled = false;
             this.toolStripButton_Generare_Traseu.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Generare_Traseu.Image")));
             this.toolStripButton_Generare_Traseu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_Generare_Traseu.Name = "toolStripButton_Generare_Traseu";
             this.toolStripButton_Generare_Traseu.Size = new System.Drawing.Size(154, 32);
             this.toolStripButton_Generare_Traseu.Text = "Generare Traseu";
+            this.toolStripButton_Generare_Traseu.Click += new System.EventHandler(this.toolStripButton_Generare_Traseu_Click);
             // 
             // Centenar_Start
             // 

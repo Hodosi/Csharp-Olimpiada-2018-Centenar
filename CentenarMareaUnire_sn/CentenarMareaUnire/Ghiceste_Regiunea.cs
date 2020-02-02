@@ -52,17 +52,16 @@ namespace CentenarMareaUnire
             string[] coordonate = new string[3];
             char split = '*';
             string sir;
+            //----------------------------------------------------------
             sir = sr.ReadLine();
             coordonate = sir.Split(split);
-            points[i++].X = inix = x1 = x2 = Convert.ToInt32(coordonate[0]);
-            points[i++].Y = iniy = y1 = y2 = Convert.ToInt32(coordonate[1]);
-
-            graphics.DrawLine(pen, x1, y1, x2, y2);
+            points[i].X = inix = x1  = Convert.ToInt32(coordonate[0]);
+            points[i++].Y = iniy = y1 = Convert.ToInt32(coordonate[1]);
 
             while ((sir = sr.ReadLine()) != null)
             {
                 coordonate = sir.Split(split);
-                points[i++].X = x2 = Convert.ToInt32(coordonate[0]);
+                points[i].X = x2 = Convert.ToInt32(coordonate[0]);
                 points[i++].Y = y2 = Convert.ToInt32(coordonate[1]);
                 graphics.DrawLine(pen, x1, y1, x2, y2);
                 x1 = x2;
@@ -81,6 +80,7 @@ namespace CentenarMareaUnire
             fn = Application.StartupPath + @"\Resurse_C#\Harti\";
             int lungime = fn.Length;
             var files = Directory.EnumerateFiles(fn).ToArray();
+            MessageBox.Show(files.Length.ToString() + "-regiuni");
             for (int j = 0; j < files.Length; j++)
             {
 
@@ -122,17 +122,23 @@ namespace CentenarMareaUnire
 
         private void button_Start_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show("Capitale: "+capitale.Count.ToString());
+            //MessageBox.Show("Regiuni: "+regiune.Count.ToString());
+            //MessageBox.Show("Pozitii Captale: "+pointCapitale.Length.ToString());
+            intrebari = 0;
             altaintrebare();
         }
 
         public void altaintrebare()
         {
-            poz = rand.Next(0, 9);
+            poz = rand.Next(0, 10);
+          //  MessageBox.Show(poz.ToString());
             while (!valid(poz))
             {
-                poz = rand.Next(0, 9);
+                poz = rand.Next(0, 10);
+            //    MessageBox.Show(poz.ToString());
             }
-            MessageBox.Show(poz.ToString());
+            //MessageBox.Show(poz.ToString());
             pozitiiValide[poz] = 0;
             textBoxes[intrebari].Location = new Point(pointCapitale[poz].X, pointCapitale[poz].Y);
             textBoxes[intrebari].Visible = true;
@@ -145,6 +151,12 @@ namespace CentenarMareaUnire
                 return true;
             }
             return false;
+        }
+
+        private void button_Diploma_Click(object sender, EventArgs e)
+        {
+            Diploma f = new Diploma();
+            f.ShowDialog();
         }
 
         private void button_Verifica_Click(object sender, EventArgs e)
@@ -163,7 +175,8 @@ namespace CentenarMareaUnire
 
             if (intrebari == 9)
             {
-                MessageBox.Show(punctajtotal.ToString());
+                GLOBAL.punctajTotal = punctajtotal;
+                MessageBox.Show("Felicitari ati obtinut "+ punctajtotal.ToString());
             }
             else
             {
@@ -171,7 +184,5 @@ namespace CentenarMareaUnire
                 altaintrebare();
             }
         }
-
-        //poz 9????
     }
 }

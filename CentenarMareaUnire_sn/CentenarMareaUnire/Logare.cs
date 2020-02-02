@@ -32,6 +32,7 @@ namespace CentenarMareaUnire
             if (util.existsUser(eamil, pass))
             {
 
+                GLOBAL.UtilizatorCurent = util.getUser(eamil, pass);
                 this.Hide();
                 Centenar_Start f = new Centenar_Start();
                 f.toolStripButton_Creare_Lectie.Enabled = true;
